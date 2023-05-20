@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/9a520a623c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h2>Gazal Mehrotra.</h2>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#Achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <div id="name">
+          <p>Software & Web Developer</p>
+        </div>
+          <br />
+          <h1>
+            Heyy everyone,<br />
+            I'm <span>Gazal Mehrotra</span>
+          </h1>
+        </div>
+      </div>
+      <!-- --------about------------ -->
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/poi.1jpeg.jpeg" width="440px" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="info">About Me</h1>
+            <p>
+              "Hello, my name is Gazal Mehrotra and I come from the city of Taj,
+              Agra,I am majoring in Electronics and Communication at Shiv Nadar
+              Univerity, Noida. Along with my core studies, I have a strong
+              inclination towards software development (SDE) and so I am also
+              pursuing a minor in Computer Science and would like to pursue my
+              career in it. I am a curiosity driven person and I am always ready
+              to learn new things."
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />
+                  Languages known HTML,CSS,JavaScript
+                </li>
+                <li>
+                  <span>Software Development</span><br />Languages known Java,
+                  C++, Python
+                </li>
+                <li><span>Other Skills</span><br />Git, GitHub, Canva</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Experience">
+              <ul>
+                <li>
+                  <span>06/2022 - 09/2022</span><br />Web Developer at
+                  Artiosys<br />Developed client's profile webpage.
+                </li>
+                <li>
+                  <span>11/2020 - 12/2020</span><br />Marketing and Business
+                  Development Internship<br />Brought in 100+ registrations and
+                  helped increase the reach of the clients by 25%.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Education">
+              <ul>
+                <li>
+                  <span>2020-Current</span><br />B.Tech : Electronics and
+                  Communication : 8.04 cgpa<br />
+                  Minor in : Computer Science Engineering.<br />Shiv Nadar
+                  University, Noida
+                </li>
+                <li>
+                  <span>2019-2020</span><br />ISC: 92%<br />St. Patrick's Junior
+                  Colleg, Agra
+                </li>
+                <li>
+                  <span>2017-2018</span><br />ICSE: 94%<br />St. Patrick's
+                  Junior College, Agra
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div>
+      <!-- -----------------Project------------> 
+      <div id="project">
+      <div class="container">
+        <h1 class="info">Projects</h1>
+        <div class="project-list">
+          <div>
+            <i class="fa-solid fa-link"></i>
+            <h2>DropChain</h2>
+            <p>DropChain is a Blockchain-based file sharing app that's secure and
+              decentralized.<br>
+              The project was made by a group of 5 members and I worked on the solidity
+              code.<br>
+              The project uses HTML, CSS, JavaScript, ReactJS, Solidity, HardHat.
+              </p>
+              <a href="#">Dropchain</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Linux Shell</h2>
+            <p>It implements a simple shell that can run basic commands like "cd", "exit" , "sleep"
+              , "cat" , "ls" ,etc.<br>
+               Built using C language.
+              </p>
+              <a href="#">Linux Shell</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-music"></i>
+            <h2>Music Player</h2>
+            <p>A music player web app that allows you to play, pause and select your own
+              songs.<br>
+              Built using HTML, CSS and JavaScript
+              </p>
+              <a href="#">Music Player</a>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+    <!-- ---------------Achievements----------------->
+    <div id="Achievements">
+      <div class="container">
+        <h1 class="info">My Achievements</h1>
+        <div class="achievement-list">
+          <div class="A1">
+              <a href="#"><h2>Airdecor</h2></a>
+              <p> A decoration-related business venture in Agra,India.
+                Got featured on WeddingSutra.com
+              </p>
+            </div>
+          <div class="A1">
+              <a href="#"><h2>Paradigm Hackathon</h2></a>
+              <p> Participated in a 4-member team in a 24-hour Hackathon.<br>
+                  Worked on a ML regression model to build a Supply Chain Management System
+                </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--contact-->
+    <div id = "contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="info">Contact Me</h1><br><br>
+            <p><i class="fa-solid fa-paper-plane"></i> gazalmehrotra883@gmail.com</p>
+            <p><i class="fa-sharp fa-solid fa-phone-volume"></i> 7302869496</p>
+            <div class="social-icons">
+              <a href="https://instagram.com/gazalmehrotra26?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/gazal-mehrotra-43a917259/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Gazal026"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <br>
+            <a href="/images/Gazal_Mehrotra_Resume_.pdf" download class="btn"> Download CV</a>
+          </div>
+            <div class="contact-right">
+              <br><br><br><br><br>
+              <form name="submit-to-google-sheet">
+                <input type="text" name= "Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <textarea name="Message" rows="4" placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+              </form>
+              <span id = "msg">Success</span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+      <p>Copyright @Gazal. Made by Gazal Mehrotra</p></div>
+    </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-content");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+<form name="submit-to-google-sheet">
+
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSap4mGfX_KlYOWXvpRytYC_5i_asyH6UPTFdEFpMdyxqQnm7O4mqGO_Ii5tYiYCWJ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent Successfully"
+    setTimeout(function(){
+      msg.innerHTML=""
+     }, 5000)
+     form.reset()})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
